@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — Léo Carboni</title>
+<meta name="description" content="Parcours, compétences et expériences de Léo Carboni, développeur web junior.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="dot">❀</span> leo carboni</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html" class="active">À propos</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <div class="page-head wrap">
+    <p class="eyebrow">Mon parcours</p>
+    <h1 class="section-title">À propos de moi</h1>
+    <p class="section-sub">Qui je suis, ce que je sais faire, et comment j'en suis arrivé là.</p>
+  </div>
+
+  <div class="wrap about-grid">
+
+    <!-- Colonne portrait -->
+    <aside class="about-portrait">
+      <div class="portrait-frame">
+        <img src="images/portrait1.PNG" alt="Portrait de Léo Carboni" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'font-family:var(--font-mono); color:var(--text-faint); font-size:0.85rem;\'>Photo à venir</span>';">
+      </div>
+      <div class="portrait-meta">
+        <span><span class="k">Nom — </span>Léo Carboni</span>
+        <span><span class="k">Rôle — </span>Etudiant en informatique</span>
+        <span><span class="k">Formation — </span>BTS SIO (SLAM)</span>
+        <span><span class="k">Lieu — </span>St-Pierre-lès-Elbeuf (76)</span>
+        <span><span class="k">Mobilité — </span>Permis B / Véhiculé</span>
+        <span><span class="k">Contact — </span><a href="mailto:leocarboni76@gmail.com" style="color:inherit; text-decoration:underline;">leocarboni76@gmail.com</a></span>
+      </div>
+      <div style="margin-top:18px;">
+      <a href="doc/CV_CarboniLeo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="width:100%; justify-content:center;">💼 Télécharger mon CV</a>
+      
+      <!-- Bouton Certification ANSSI -->
+      <a href="https://leoc76.github.io/doc/certif.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="width:100%; justify-content:center; margin-top:10px; gap:8px;">
+        🛡️ Certification ANSSI
+      </a>
+    </div>
+    </aside>
+
+    <!-- Colonne contenu -->
+    <div class="about-body">
+
+      <h2>Présentation</h2>
+      <p>Passionné par l'informatique sous toutes ses formes, de la <strong>conception logicielle</strong> à la <strong>résolution de problèmes techniques</strong> complexes. Mon profil polyvalent me permet de naviguer aussi bien dans le développement applicatif que dans l'assistance technique et l'administration système.</p>
+      <p>Fort de mes expériences en entreprise et en service civique, je recherche aujourd'hui des défis technologiques où ma rigueur, ma curiosité et mon sens de l'accompagnement utilisateur pourront s'exprimer pleinement.</p>
+
+      <h2>Expériences professionnelles</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Depuis Avril 2026</div>
+          <h3>Volontaire Service Civique — France Travail Elbeuf</h3>
+          <p>Accompagnement des usagers dans l’utilisation des outils numériques de France Travail. Médiation technique et pédagogie numérique.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Juillet — Août 2025</div>
+          <h3>Manutentionnaire Finition — CCI PLV PRODUCTIONS</h3>
+          <p>Travaux de finition, assemblage, câblage et préparation de présentoirs. Rigueur opérationnelle en milieu industriel.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Janvier — Février 2025</div>
+          <h3>Stagiaire en développement — Lycée Gustave Flaubert</h3>
+          <p>Conception d'une application de gestion de vente en binôme (Java/SQL). Automatisation de la facturation et gestion des stocks.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Juin — Juillet 2024</div>
+          <h3>Stagiaire en développement — Sanofi</h3>
+          <p>Maintenance évolutive d'une application IHM industrielle. Collaboration agile avec l'équipe de développement.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Juillet 2023</div>
+          <h3>Personnel de Service — Société IGESA</h3>
+          <p>Gestion de flux importants en colonie de vacances. Travail d'équipe et réactivité en environnement dynamique.</p>
+        </div>
+      </div>
+
+      <h2>Diplômes et Formations</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2023 — 2025</div>
+          <h3>BTS SIO (Option SLAM) — Lycée Gustave Flaubert</h3>
+          <p>Spécialisation en Solutions Logicielles et Applications Métiers. Apprentissage du génie logiciel, des bases de données et de la cybersécurité.</p>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-date">2020 — 2022</div>
+          <h3>BAC Général — Lycée André Maurois</h3>
+          <p>Spécialités Mathématiques et Numérique & Sciences Informatiques (NSI).</p>
+        </div>
+      </div>
+
+      <h2>Compétences techniques</h2>
+<div class="skills-detail">
+  
+  <div class="skill-group">
+    <h4>Développement & Langages</h4>
+    <div class="skills-bars">
+      <div class="skill-bar-row">
+        <span class="name mono">HTML / CSS</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="85"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">Java / JavaScript</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="75"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">Python / PHP</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="70"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4>Bases de données & Outils</h4>
+    <div class="skills-bars">
+      <div class="skill-bar-row">
+        <span class="name mono">SQL (MySQL / PostgreSQL)</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="80"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">Git / GitHub</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="75"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">WordPress & CMS</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="80"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <h4>Systèmes, Réseaux & Support</h4>
+    <div class="skills-bars">
+      <div class="skill-bar-row">
+        <span class="name mono">Windows / Linux</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="80"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">Virtualisation</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="75"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">Environnement Cisco</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="60"></div></div>
+      </div>
+      <div class="skill-bar-row">
+        <span class="name mono">Support & Médiation IT</span>
+        <div class="skill-bar-track"><div class="skill-bar-fill" data-level="85"></div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+      <h2>Langues</h2>
+      <div class="lang-row">
+        <div class="lang-item">
+          <div class="name">Anglais</div>
+          <div class="level mono">Courant — B2</div>
+        </div>
+        <div class="lang-item">
+          <div class="name">Italien</div>
+          <div class="level mono">Intermédiaire — B1</div>
+        </div>
+      </div>
+
+      <h2>Atouts</h2>
+      <div class="project-tags" style="margin-top:8px;">
+        <span class="tag">Curieux</span>
+        <span class="tag">Rigoureux</span>
+        <span class="tag">Esprit d'équipe</span>
+        <span class="tag">Résolution de problèmes</span>
+        <span class="tag">Adaptabilité</span>
+        <span class="tag">Collaboration</span>
+      </div>
+
+      <h2>Centres d'intérêt</h2>
+      <div class="project-tags" style="margin-top:8px;">
+        <span class="tag">Tennis</span>
+        <span class="tag">Musculation</span>
+        <span class="tag">Lecture</span>
+        <span class="tag">Cinéma</span>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© <span class="current-year"></span> Léo Carboni</span>
+    <div class="footer-links">
+      <a href="https://github.com/leoc76" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/leo-carboni-a4b513265" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
