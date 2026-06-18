@@ -7,7 +7,6 @@
 <meta name="description" content="Contactez Léo Carboni, développeur web junior, pour vos projets, stages ou alternances.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
@@ -72,12 +71,16 @@
     <!-- Formulaire de contact (colonne droite) -->
     <div class="contact-form-wrapper reveal">
       
-      <!-- Message de succès géré par script.js -->
-      <div class="form-success">
+      <!-- Message de succès -->
+      <div class="form-success" id="success-msg">
         <span>✓</span> Votre message a bien été envoyé ! Je vous répondrai dans les plus brefs délais.
       </div>
 
       <form id="contact-form">
+        <!-- Configuration cachée pour FormSubmit (désactive le captcha pénible pour l'utilisateur) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
         <div class="form-group">
           <label for="name">Nom complet</label>
           <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
@@ -98,10 +101,10 @@
           <textarea id="message" name="message" placeholder="Bonjour Léo, je vous contacte car..." required></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+        <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
         
-        <div class="form-note">
-          * Ce formulaire de démonstration simule l'envoi de messages côté client.
+        <div class="form-note" style="margin-top: 12px;">
+          * Vos données sont transmises de manière sécurisée et me sont directement envoyées par boîte mail.
         </div>
       </form>
     </div>
@@ -122,5 +125,50 @@
 </footer>
 
 <script src="js/script.js"></script>
+
+<!-- Script logique d'envoi fonctionnel en arrière-plan -->
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Empêche le rechargement de la page
+    
+    const form = this;
+    const button = document.getElementById('submit-btn');
+    const successMsg = document.getElementById('success-msg');
+    const originalBtnText = button.textContent;
+    
+    // Changement d'état visuel du bouton pendant le chargement
+    button.disabled = true;
+    button.textContent = "Envoi en cours...";
+    button.style.opacity = "0.7";
+
+    const formData = new FormData(form);
+
+    // Envoi des données via l'API FormSubmit liée à ton adresse mail
+    fetch("https://formsubmit.co/ajax/leocarboni76@gmail.com", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success === "true" || data.success) {
+        // Succès : Masque le formulaire et affiche le bandeau de réussite
+        form.style.display = 'none';
+        successMsg.style.display = 'block';
+        window.scrollTo({ top: successMsg.offsetTop - 100, behavior: 'smooth' });
+      } else {
+        throw new Error("Erreur de l'API");
+      }
+    })
+    .catch(error => {
+      console.error("Erreur d'envoi :", error);
+      alert("Oops ! Une erreur est survenue lors de l'envoi du formulaire. Réessayez ou passez directement par mail !");
+      
+      // Réinitialise le bouton en cas d'échec
+      button.disabled = false;
+      button.textContent = originalBtnText;
+      button.style.opacity = "1";
+    });
+  });
+</script>
 </body>
 </html>
