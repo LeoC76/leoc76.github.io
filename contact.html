@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Léo Carboni</title>
-<meta name="description" content="Contactez Léo Carboni, développeur web junior, pour vos projets, stages ou alternances.">
+<meta name="description" content="Contactez Léo Carboni pour vos projets, stages ou opportunités professionnelles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -27,86 +27,40 @@
 
 <main>
 
-  <div class="page-head wrap">
+  <!-- En-tête de page centré -->
+  <div class="page-head wrap" style="text-align: center;">
     <p class="eyebrow">Une opportunité ?</p>
     <h1 class="section-title">Discutons ensemble</h1>
-    <p class="section-sub">Que ce soit pour une proposition d'alternance, une poursuite d'études en Licence Informatique ou un simple échange technique, n'hésitez pas à me contacter.</p>
+    <p class="section-sub" style="margin-left: auto; margin-right: auto;">Que ce soit pour une proposition de stage, d'alternance ou un échange technique, vous pouvez me joindre directement sur mes canaux professionnels.</p>
   </div>
 
-  <div class="wrap contact-grid">
+  <div class="wrap" style="max-width: 600px; margin: 0 auto; padding-bottom: 80px;">
     
-    <!-- Informations de contact (colonne gauche) -->
-    <div class="contact-info reveal">
-      <h2>Mes coordonnées</h2>
-      <p>Vous pouvez me joindre directement via mes réseaux professionnels ou m'envoyer un message en utilisant le formulaire ci-contre.</p>
+    <!-- Conteneur minimaliste Contact -->
+    <div class="card reveal" style="padding: 40px; text-align: center; border: 1px solid var(--border, rgba(255,255,255,0.08));">
       
-      <div class="contact-channel">
-        <div class="channel-icon">✉</div>
-        <div class="channel-text">
-          <div class="label">Email</div>
-          <div class="value"><a href="mailto:leocarboni76@gmail.com" style="color: inherit;">leocarboni76@gmail.com</a></div>
-        </div>
+      <!-- Section Email -->
+      <div style="margin-bottom: 40px;">
+        <p class="eyebrow" style="margin-bottom: 10px; letter-spacing: 0.1em;">Courriel</p>
+        <a href="mailto:leocarboni76@gmail.com" style="font-size: 1.4rem; font-weight: 500; color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.3); padding-bottom: 4px;">
+          leocarboni76@gmail.com
+        </a>
       </div>
 
-      <div class="contact-channel">
-        <div class="channel-icon">📍</div>
-        <div class="channel-text">
-          <div class="label">Localisation</div>
-          <div class="value">Saint-pierre-Lès-Elbeuf, Normandie, France</div>
-        </div>
-      </div>
-
-      <div class="contact-channel">
-        <div class="channel-icon">🔗</div>
-        <div class="channel-text">
-          <div class="label">Réseaux</div>
-          <div class="value">
-            <a href="https://www.linkedin.com/in/leo-carboni-a4b513265" target="_blank" rel="noopener">LinkedIn</a> — 
-            <a href="https://github.com/LeoC76" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Formulaire de contact (colonne droite) -->
-    <div class="contact-form-wrapper reveal">
-      
-      <!-- Message de succès -->
-      <div class="form-success" id="success-msg">
-        <span>✓</span> Votre message a bien été envoyé ! Je vous répondrai dans les plus brefs délais.
-      </div>
-
-      <form id="contact-form">
-        <!-- Configuration cachée pour FormSubmit (désactive le captcha pénible pour l'utilisateur) -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-
-        <div class="form-group">
-          <label for="name">Nom complet</label>
-          <input type="text" id="name" name="name" placeholder="Ex: Jean Dupont" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Adresse email</label>
-          <input type="email" id="email" name="email" placeholder="Ex: jean.dupont@email.com" required>
-        </div>
-
-        <div class="form-group">
-          <label for="subject">Objet</label>
-          <input type="text" id="subject" name="subject" placeholder="Ex: Proposition d'alternance / Stage" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Votre message</label>
-          <textarea id="message" name="message" placeholder="Bonjour Léo, je vous contacte car..." required></textarea>
-        </div>
-
-        <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+      <!-- Section LinkedIn -->
+      <div>
+        <p class="eyebrow" style="margin-bottom: 15px; letter-spacing: 0.1em;">Réseau Professionnel</p>
         
-        <div class="form-note" style="margin-top: 12px;">
-          * Vos données sont transmises de manière sécurisée et me sont directement envoyées par boîte mail.
-        </div>
-      </form>
+        <!-- Bouton avec ton dégradé linéaire personnalisé -->
+        <a href="https://www.linkedin.com/in/leo-carboni-a4b513265" target="_blank" rel="noopener noreferrer" class="btn" 
+           style="display: inline-flex; justify-content: center; align-items: center; width: auto; padding: 14px 36px; gap: 8px; 
+                  background: linear-gradient(135deg, #ff6b6b, #6e7dab); color: #ffffff; border: none; font-weight: 600; 
+                  border-radius: var(--radius-sm, 6px); box-shadow: 0 4px 15px rgba(255, 107, 107, 0.25); text-decoration: none;
+                  transition: opacity 0.2s ease, transform 0.2s ease;">
+          Mon profil LinkedIn ↗
+        </a>
+      </div>
+
     </div>
 
   </div>
@@ -125,50 +79,5 @@
 </footer>
 
 <script src="js/script.js"></script>
-
-<!-- Script logique d'envoi fonctionnel en arrière-plan -->
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Empêche le rechargement de la page
-    
-    const form = this;
-    const button = document.getElementById('submit-btn');
-    const successMsg = document.getElementById('success-msg');
-    const originalBtnText = button.textContent;
-    
-    // Changement d'état visuel du bouton pendant le chargement
-    button.disabled = true;
-    button.textContent = "Envoi en cours...";
-    button.style.opacity = "0.7";
-
-    const formData = new FormData(form);
-
-    // Envoi des données via l'API FormSubmit liée à ton adresse mail
-    fetch("https://formsubmit.co/ajax/leocarboni76@gmail.com", {
-      method: "POST",
-      body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success === "true" || data.success) {
-        // Succès : Masque le formulaire et affiche le bandeau de réussite
-        form.style.display = 'none';
-        successMsg.style.display = 'block';
-        window.scrollTo({ top: successMsg.offsetTop - 100, behavior: 'smooth' });
-      } else {
-        throw new Error("Erreur de l'API");
-      }
-    })
-    .catch(error => {
-      console.error("Erreur d'envoi :", error);
-      alert("Oops ! Une erreur est survenue lors de l'envoi du formulaire. Réessayez ou passez directement par mail !");
-      
-      // Réinitialise le bouton en cas d'échec
-      button.disabled = false;
-      button.textContent = originalBtnText;
-      button.style.opacity = "1";
-    });
-  });
-</script>
 </body>
 </html>
