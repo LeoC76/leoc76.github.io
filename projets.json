@@ -1,0 +1,62 @@
+[
+  {
+    "titre": "Création d'un logo",
+    "description": "Un logo personnel créé avec Illustrator.",
+    "image": "images/projets/creationlogo.jpg",
+    "status": "Perso",
+    "tags": ["perso"],
+    "technos": ["Illustrator"],
+    "lien": "https://leoc76.github.io/doc/logopresentation.pdf",
+    "texteLien": "Presentation →"
+  },
+  {
+    "titre": "Site Vitrine SLOOM",
+    "description": "Réalisation d'un site vitrine pour une entreprise fictive proposant des salles de coworking dans le cadre d'un projet en groupe.",
+    "image": "images/projets/sloom.png",
+    "status": "Scolaire",
+    "tags": ["web", "scolaire"],
+    "technos": ["HTML5 / CSS3", "JavaScript"],
+    "lien": "https://github.com/Fearoxeuh/SLOOM/blob/main/script.js",
+    "texteLien": "GitHub →"
+  },
+  {
+    "titre": "Appli gestion de vente",
+    "description": "Une application en Java et MySQL pour gérer les ventes et les stocks de la petite boutique présent dans le lycée Gustave Flaubert.",
+    "image": "images/projets/applicaisse.png",
+    "status": "Stage",
+    "tags": ["logiciel", "scolaire"],
+    "technos": ["Java", "MySQL"],
+    "lien": "https://youtu.be/0XeCaucbLWM",
+    "texteLien": "Video demonstration →"
+  },
+  {
+    "titre": "Application de gestion de stock",
+    "description": "Une application java créée en équipe permettant de gérer les stocks afin de relier l'entrepot et la magasin.",
+    "image": "images/projets/GestionStock.png",
+    "status": "Scolaire",
+    "tags": ["logiciel", "scolaire"],
+    "technos": ["Java", "MySQL"],
+    "lien": "https://github.com/Fearoxeuh/EasybeeJava",
+    "texteLien": "GitHub →"
+  },
+  {
+    "titre": "Application Web permettant de gérer des formations",
+    "description": "Projet réalisé en groupe, l'application web permet de s'inscrire, creer et consulter des formations pour l'entreprise fictif Easybee.",
+    "image": "images/projets/easyBeeFormation.png",
+    "status": "Scolaire",
+    "tags": ["web", "scolaire"],
+    "technos": ["PHP", "MySQL", "Architecture MVC", "CSS3"],
+    "lien": "https://github.com/LeoC76/Projet3Web",
+    "texteLien": "GitHub →"
+  },
+  {
+    "titre": "La nuit du code 2022",
+    "description": "Projet réalisé en groupe, le but était de créer un jeu en utilisant python, notre jeu à terminé parmi les 8 projets primés en France en 2022 !",
+    "image": "images/projets/nuitducode.jpg",
+    "status": "Scolaire/Perso",
+    "tags": ["perso", "scolaire"],
+    "technos": ["Python"],
+    "lien": "https://maurois-elbeuf.lycee.ac-normandie.fr/spip.php?article2175",
+    "texteLien": "Lien de l'article →"
+  }
+]
