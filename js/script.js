@@ -91,7 +91,7 @@ async function chargerProjets() {
   if (!container) return; // Sécurité si on n'est pas sur la page projets
 
   try {
-    const reponse = await fetch('projets.json');
+    const reponse = await fetch('../projets.json');
     const projets = await reponse.json();
 
     container.innerHTML = ''; // Nettoyage du conteneur

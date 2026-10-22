@@ -2,7 +2,7 @@
   {
     "titre": "Création d'un logo",
     "description": "Un logo personnel créé avec Illustrator.",
-    "image": "images/projets/creationlogo.jpg",
+    "image": "../images/projets/creationlogo.jpg",
     "status": "Perso",
     "tags": ["perso"],
     "technos": ["Illustrator"],
@@ -12,7 +12,7 @@
   {
     "titre": "Site Vitrine SLOOM",
     "description": "Réalisation d'un site vitrine pour une entreprise fictive proposant des salles de coworking dans le cadre d'un projet en groupe.",
-    "image": "images/projets/sloom.png",
+    "image": "../images/projets/sloom.png",
     "status": "Scolaire",
     "tags": ["web", "scolaire"],
     "technos": ["HTML5 / CSS3", "JavaScript"],
@@ -22,7 +22,7 @@
   {
     "titre": "Appli gestion de vente",
     "description": "Une application en Java et MySQL pour gérer les ventes et les stocks de la petite boutique présent dans le lycée Gustave Flaubert.",
-    "image": "images/projets/applicaisse.png",
+    "image": "../images/projets/applicaisse.png",
     "status": "Stage",
     "tags": ["logiciel", "scolaire"],
     "technos": ["Java", "MySQL"],
@@ -32,7 +32,7 @@
   {
     "titre": "Application de gestion de stock",
     "description": "Une application java créée en équipe permettant de gérer les stocks afin de relier l'entrepot et la magasin.",
-    "image": "images/projets/GestionStock.png",
+    "image": "../images/projets/GestionStock.png",
     "status": "Scolaire",
     "tags": ["logiciel", "scolaire"],
     "technos": ["Java", "MySQL"],
@@ -42,7 +42,7 @@
   {
     "titre": "Application Web permettant de gérer des formations",
     "description": "Projet réalisé en groupe, l'application web permet de s'inscrire, creer et consulter des formations pour l'entreprise fictif Easybee.",
-    "image": "images/projets/easyBeeFormation.png",
+    "image": "../images/projets/easyBeeFormation.png",
     "status": "Scolaire",
     "tags": ["web", "scolaire"],
     "technos": ["PHP", "MySQL", "Architecture MVC", "CSS3"],
@@ -52,7 +52,7 @@
   {
     "titre": "La nuit du code 2022",
     "description": "Projet réalisé en groupe, le but était de créer un jeu en utilisant python, notre jeu à terminé parmi les 8 projets primés en France en 2022 !",
-    "image": "images/projets/nuitducode.jpg",
+    "image": "../images/projets/nuitducode.jpg",
     "status": "Scolaire/Perso",
     "tags": ["perso", "scolaire"],
     "technos": ["Python"],
